@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de [Votre Nom] - Cloud & DevOps Engineer | SRE. Spécialisé en IaC, Kubernetes et Fiabilité.">
+    <title>Portfolio SRE / DevOps Engineer</title>
+    
+    <!-- Fonts: Inter & Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon (via emoji for simplicity/performance) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">DevOps<span class="accent">.SRE</span></a>
+            <button class="burger-menu" aria-label="Menu" id="burgerBtn">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#methodology">Méthodologie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <p class="hero-role-tag">Open for Opportunities</p>
+                <h1 class="hero-title">Cloud & DevOps Engineer <span class="divider">|</span> <span class="accent">SRE</span></h1>
+                <p class="hero-subtitle">Spécialisé en Infrastructure as Code, Kubernetes et Fiabilité des systèmes.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="icon">🚀</span>
+                        <span class="text">Objectif : Réduire le Time-to-Market et les incidents.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="icon">🛡️</span>
+                        <span class="text">Expérience environnements critiques</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Voir les Projets</a>
+                    <a href="mailto:email@example.com" class="btn btn-secondary">Me Contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Domaines d'Intervention</h2>
+                <div class="skills-grid">
+                    <!-- Card 1 -->
+                    <div class="skill-card">
+                        <h3 class="skill-title">Infrastructure & Cloud</h3>
+                        <p class="skill-desc">Gestion d'environnements AWS/Azure, Networking, IAM, Sécurité et FinOps.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="skill-card">
+                        <h3 class="skill-title">IaC & Automation</h3>
+                        <p class="skill-desc">Terraform (Modules, State management), Ansible (Post-provisioning).</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="skill-card">
+                        <h3 class="skill-title">Containers & Kubernetes</h3>
+                        <p class="skill-desc">Design de clusters, Sécurité (RBAC), Ingress, Service Mesh.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="skill-card">
+                        <h3 class="skill-title">Reliability / SRE</h3>
+                        <p class="skill-desc">Monitoring (Prometheus/Grafana), Alerting, Gestion d'incidents, SLO/SLA.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="skill-card">
+                        <h3 class="skill-title">CI/CD & DevEx</h3>
+                        <p class="skill-desc">Pipelines avancés (GitLab CI/GitHub Actions), Release strategy, Tests automatisés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Projets Significatifs</h2>
+                <div class="projects-list">
+                    
+                    <!-- Projet 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Déploiement Automatisé d'un Cluster Kubernetes via Terraform sur AWS</h3>
+                            <span class="project-tag">Infra K8s</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-step">
+                                <span class="step-label">Contexte</span>
+                                <p>Besoin de standardiser le déploiement des environnements de production pour une haute disponibilité.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label">Problème</span>
+                                <p>Déploiements manuels propices aux erreurs, configuration drift, et temps de provisionnement > 4h.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label">Solution/Archi</span>
+                                <p class="tech-stack">VPC • Subnets • EKS • IAM OIDC • GitOps (ArgoCD)</p>
+                                <p>Développement de modules Terraform réutilisables pour le VPC et EKS. Implémentation de GitOps avec ArgoCD pour le déploiement continu des applications.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label highlight-label">Résultat</span>
+                                <p>Provisionnement complet en <strong>&lt; 20 min</strong>. Environnements iso-prod garantis.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Lacio Loc - Infrastructure de gestion de flotte</h3>
+                            <span class="project-tag">DevOps/Biz</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-step">
+                                <span class="step-label">Contexte</span>
+                                <p>Projet entrepreneurial réel de location de véhicules.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label">Problème</span>
+                                <p>Nécessité d'une plateforme robuste capable de gérer les réservations et le suivi en temps réel avec un budget limité.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label">Solution/Archi</span>
+                                <p class="tech-stack">Cloud Architecture • API • CI/CD • DB Managed</p>
+                                <p>Architecture micro-services légère. Pipelines CI/CD pour déploiement automatique sur changement de code. Monitoring basique pour uptime.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label highlight-label">Résultat</span>
+                                <p>Lancement réussi à moindre coût. Infrastructure capable de scaler selon la demande saisonnière.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Mise à l'échelle d'une solution RAG/IA</h3>
+                            <span class="project-tag">Innovation/Ops</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-step">
+                                <span class="step-label">Contexte</span>
+                                <p>Intégration d'un module d'IA générative dans une application existante.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label">Problème</span>
+                                <p>Les modèles d'inférence consomment beaucoup de ressources et bloquent le thread principal. Latence élevée.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label">Solution/Archi</span>
+                                <p class="tech-stack">GPU Instances • Auto-scaling • Inférence • Python</p>
+                                <p>Architecture découplée avec workers dédiés sur instances GPU-optimized. Mise en place de queueing (RabbitMQ/SQS) pour lisser la charge.</p>
+                            </div>
+                            <div class="project-step">
+                                <span class="step-label highlight-label">Résultat</span>
+                                <p>Capacité de traitement x5. Latence perçue par l'utilisateur divisée par 2 grâce au traitement asynchrone.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expérience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Parcours & Impact</h2>
+                <div class="timeline">
+                    
+                    <!-- Expérience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - Présent</div>
+                        <div class="timeline-content">
+                            <h3>Cloud / DevOps Engineer</h3>
+                            <span class="company">Entreprise A / Freelance</span>
+                            <ul class="impact-list">
+                                <li><strong>Contexte :</strong> Modernisation d'une infrastructure legacy on-premise vers le Cloud.</li>
+                                <li><strong>Action :</strong> Migration "Lift and Shift" puis refactoring vers conteneurs. Mise en place IaC.</li>
+                                <li><strong>Résultat :</strong> uptime 99.9%, réduction coûts opérationnels de 15%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Expérience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>SysAdmin & Junior DevOps</h3>
+                            <span class="company">Entreprise B</span>
+                            <ul class="impact-list">
+                                <li><strong>Contexte :</strong> Gestion parc serveurs Linux, début de l'automatisation.</li>
+                                <li><strong>Action :</strong> Scripting Bash/Python pour tâches récurrentes. Introduction de Docker.</li>
+                                <li><strong>Résultat :</strong> Gain de 10h/semaine pour l'équipe ops sur les tâches manuelles.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Méthodologie -->
+        <section id="methodology" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Philosophie de Travail</h2>
+                <div class="methodology-grid">
+                    <div class="method-card">
+                        <div class="method-icon">🔒</div>
+                        <h3>Sécurité by Design</h3>
+                        <p>La sécurité n'est pas une étape finale, mais un pré-requis. Moindre privilège et chiffrement par défaut.</p>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">🧹</div>
+                        <h3>Gestion de la Dette</h3>
+                        <p>Pragmatisme : on livre vite, mais on refactorise régulièrement. Pas de "quick fix" qui devient permanent.</p>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">🤝</div>
+                        <h3>Collaboration Dev/Ops</h3>
+                        <p>Casser les silos. L'infrastructure doit servir les développeurs, pas les ralentir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/votreprofile" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/votreusername" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:email@example.com">Email</a>
+            </div>
+            <p class="footer-note">Code source de ce portfolio disponible sur GitHub. Hébergé via GitHub Actions.</p>
+            <p class="copyright">&copy; <span id="year"></span> - Construit avec performance et passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
